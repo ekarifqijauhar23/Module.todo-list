@@ -1,0 +1,149 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Container untuk seluruh elemen */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading untuk judul aplikasi */
+h1 {
+  text-align: center;
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Formulir untuk menambahkan tugas */
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input tugas baru */
+#new-task {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#new-task:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+/* Tombol untuk menambahkan tugas */
+button {
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Daftar tugas */
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Setiap item tugas */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Tugas yang selesai */
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Checkbox untuk menandai tugas selesai */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Tombol untuk menghapus tugas */
+.remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Tombol filter */
+.filters {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #5a6268;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+}
